@@ -1,0 +1,17 @@
+
+#define SIN 12
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(SIN, INPUT);
+  Serial.println("CLEARDATA");
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+float valor =  analogRead(SIN);
+delay(40);
+Serial.println(valor*1000);
+}
